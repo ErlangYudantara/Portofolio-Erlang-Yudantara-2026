@@ -6,6 +6,7 @@
     <!--Library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--LIBRARY-->
     <!--LINK INTEGRASI-->
     <link rel="stylesheet" href="style.css">
@@ -42,9 +43,9 @@
     </section>
 
     <!--SECTION ABOUT-->
-    <section id="Tentang" class="Section">
+    <section id="Tentang" class="Section" >
         <h2>Tentang Saya</h2>
-        <div class="Profile">
+        <div class="Profile" data-aos="fade-left">
         <div class="Profile-text">
         <p>Saya mulai tertarik dengan dunia teknologi sejak duduk di bangku SMA. 
             Ketertarikan tersebut terus berkembang hingga saat ini saya menempuh 
@@ -56,7 +57,7 @@
             baik dari sisi teknis maupun kreativitas dalam membuat sebuah aplikasi. 
             Saya percaya bahwa teknologi dapat menjadi solusi untuk berbagai permasalahan, 
             dan saya ingin menjadi bagian dari perkembangan tersebut.</p>
-            <div class="Profile-bottom">
+            <div class="Profile-bottom" data-aos="fade-left">
                 <a href="https://drive.google.com/file/d/1uLe-HK3Rb4guGQ37elN1D41yObG4Z4jg/view?usp=drive_link" target="_blank" download class="btn-cv">
                     <i class="fa-solid fa-download"></i>Download CV
                 </a>
@@ -64,7 +65,7 @@
             </div>
             <img src="Gambar/Profile.jpeg" alt="profile">
         </div>
-          <div class="social-media">
+          <div class="social-media" data-aos="fade-left">
             <a href="https://www.instagram.com/ydntraa_/" target="_blank"
             <i class="fa-brands fa-instagram"></i>
             </a>
@@ -85,7 +86,7 @@
         <h2>Pendidikan Saya</h2>
         <div class="Pendidikan-list">
 
-        <div class="Card" onclick="toggleCard(this)">
+        <div class="Card" data-aos="fade-right" onclick="toggleCard(this)">
         <img src="Gambar/logo_upn.png" >
         <div class="card-content">
         <h5>UPN Veteran Jakarta</h5>
@@ -93,7 +94,7 @@
             program studi S1 Sistem Informasi, di Universitas UPN Veteran Jakarta. 
             Di bangku perkuliahan, saya mempelajari berbagai aspek teknologi informasi
              serta pengembangan sistem, khususnya dalam bidang web development.</p>
-        <p class="periode">2025-Sekarang PRESENT</p>
+        <p class="periode">2025-PRESENT</p>
         </div>
         <i class="fa-solid fa-chevron-down card-arrow"></i>
         <!--DETAIL UPNVJ-->
@@ -113,14 +114,14 @@
             </ul>
         </div>
         </div>
-        <div class="Card" onclick="toggleCard(this)">
+        <div class="Card" data-aos="fade-left" onclick="toggleCard(this)">
         <img src="Gambar/logo_bk.png">
         <div class="card-content">
         <h5>SMA Bunda Kandung Jakarta</h5>
         <p>Saya menjalani pendidikan dengan Kurikulum Merdeka
            dengan peminatan di bidang Teknik, yang menjadi awal 
            ketertarikan saya dalam dunia teknologi.</p>
-          <p class="periode">2022-2025 PRESENT</p> 
+          <p class="periode">2022-2025</p> 
           </div>
           <i class="fa-solid fa-chevron-down card-arrow"></i>
           <div class="card-detail">
@@ -255,7 +256,7 @@
     <!--SECTION PROJECT-->
 <section id="Project" class="Section">
     <h2>Project</h2>
-    <div class="Project-list">
+    <div class="Project-list" data-aos="fade-right">
 
         <a href="#" target="_blank" class="Card-Project">
             <img src="Gambar/portofolio.png" alt="preview" class="card-preview">
@@ -294,7 +295,7 @@
 <!--SECTION SERTIFIKASI-->
 <section id="Sertifikasi" class="Section">
     <h2>Sertifikasi</h2>
-    <div class="Sertifikasi-list">
+    <div class="Sertifikasi-list" data-aos="fade-left">
         <a href="https://drive.google.com/file/d/1AtZeku7PJD6QK9EZPw2eXM1tx0AnBhsh/view?usp=drive_link" target="_blank" class="Card-Sertifikasi">
             <img src="https://lh3.googleusercontent.com/d/1AtZeku7PJD6QK9EZPw2eXM1tx0AnBhsh" alt="IBM Skills Build" class="sertif-preview"/>
             <h5>IBM SKILLS BUILD</h5>
@@ -322,7 +323,7 @@
   <section id="Kontak" class="Contact-Section">
     <div class="Contact-Wrapper">
         <!-- KIRI - Form Hubungi -->
-        <div class="Contact-Container">
+        <div class="Contact-Container" data-aos="fade-right">
             <h2>Hubungi Saya</h2>
             <p>Terima kasih telah mengunjungi portofolio saya. Saya sangat terbuka untuk berbagai kesempatan,
             baik kerja sama proyek, diskusi seputar teknologi, maupun berbagi pengalaman dalam dunia web development.
@@ -346,7 +347,7 @@
         </div>
 
         <!-- KANAN - Comments -->
-        <div class="Contact-Container">
+        <div class="Contact-Container" data-aos="fade-left">
             <h2>Comments</h2>
             <p>Sampaikan pendapat Anda di sini.</p>
             <form class="Contact-Form">
@@ -392,5 +393,12 @@
     </div>
 </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init({
+    once:true,
+    duration:1000,
+  });
+</script>
 </body>
 </html>

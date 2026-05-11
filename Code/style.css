@@ -433,8 +433,12 @@ nav a:hover::after {
         font-size: 11px;
         padding: 3px 10px;
     }
+    .Profile-bottom{
+        justify-content: center;
+        margin-right: 0;
+    }
     .btn-cv{
-        margin-right: 130px;
+        margin-right: 0;
     }
      .Card img {
         height: 50px;

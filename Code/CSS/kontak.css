@@ -1,0 +1,136 @@
+
+.Contact-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+
+.Contact-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.Contact-Container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.Contact-Container h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: 700;
+}
+
+.Contact-Container p {
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.Contact-Form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Input-Group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: border 0.3s;
+    color: white;
+}
+
+.Input-Group:focus-within {
+    border-color: rgba(255, 255, 255, 0.992);
+}
+
+.Input-Group i {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    flex-shrink: 0;
+    color: white;
+}
+
+
+.Input-Group input,
+.Input-Group textarea,
+.Input-Group label {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Input-Group textarea {
+    height: 120px;
+    resize: none;
+}
+.Input-Group input::placeholder,
+.Input-Group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
+.upload-group {
+    cursor: pointer;
+}
+
+.upload-group label {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.upload-group:hover label {
+    color: white;
+}
+
+.Contact-Form button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Contact-Form button:hover {
+    transform: translateY(-3px);
+    background: #d1d1d1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .Contact-Wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .Contact-Container {
+        padding: 24px;
+    }
+
+    .Contact-Container h2 {
+        font-size: 22px;
+    }
+}

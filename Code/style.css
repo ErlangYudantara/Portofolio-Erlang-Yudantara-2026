@@ -1,0 +1,454 @@
+@import url('CSS/project.css');
+@import url('css/skill.css');
+@import url('CSS/project.css');
+@import url('CSS/kontak.css');
+@import url('CSS/footer.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(-45deg, #000000, #696868, #18191a, #05080a);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    color: white;
+}
+@keyframes gradientMove {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #101010;
+    color: white;
+    position:sticky;
+    top: 0;
+    z-index: 999;
+}
+nav h1{
+    font-size: 15px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 4px;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.Hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap:5px;
+}
+.nama{
+    animation: neonPulse 2s infinite alternate;
+    font-size: 30px;
+}
+@keyframes neonPulse {
+    0% {
+        color: white;
+        text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #000000,
+            0 0 40px #000000;
+    }
+    100% {
+        color: #ffffff;
+        text-shadow: 
+            0 0 10px #000000,
+            0 0 20px #000000,
+            0 0 40px #000000,
+            0 0 80px #000000;
+    }
+}
+.role {
+    color: white;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;  
+    padding-right: 4px;
+    display: inline-block;
+    animation: typing 8s steps(20) infinite, blink 0.6s infinite;
+}
+@keyframes typing {
+    0%   { width: 0; }
+    50%  { width: 100%; }
+    100% { width: 0; }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: white; }
+    50%       { border-color: transparent; }
+}
+
+.Hero button{
+    padding: 15px 30px;
+    background: transparent;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.Hero button:hover{
+    transform:translateY(-4px);
+     box-shadow: 0 8px 14px rgba(200, 189, 189, 0.778);
+}
+.Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    color: white;
+    z-index: 1;
+}
+.Profile{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px 50px;
+  
+}
+.Profile img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px 20px;
+    height: 300px;
+    border-radius: 25px;
+    margin-right: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.Profile img:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0, 0.3);
+}
+.Profile p{
+    color: white;
+    text-align:right;
+    margin-right: 50px;
+    line-height: 30px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    width: 100%;
+}
+.social-media a{
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    transition: 0.3s, box-shadow 0.3s;
+    text-decoration: none; 
+}
+.social-media a:hover{
+    transform:scale(1.2);
+    color: #00ffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.Profile-bottom {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 16px;
+}
+.btn-cv{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 5px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.6s;
+    background: linear-gradient(to right, white 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    margin-right: 50px;
+}
+.btn-cv:hover{
+    background: white;
+    color: black;
+    transform: translateY(-3px);
+}
+.Pendidikan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 700px;
+    z-index: 2;
+}
+
+.Card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 20px 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.Card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.Card img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+.Card h5 {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.Card p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.periode {
+    display: inline-block;
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.card-arrow {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    transition: transform 0.4s;
+    margin-left: auto;
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.Card.active .card-arrow {
+    transform: rotate(180deg);
+}
+
+.card-detail {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+.Card.active .card-detail {
+    max-height: 800px;
+}
+
+.card-detail hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 12px 0;
+}
+
+.card-detail h6 {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-detail ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.card-detail ul li {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.card-detail ul li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #00ffff;
+}
+
+.card-detail ul img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 8px 0 8px 16px;
+    display: block;
+}
+
+.detail-images {
+    display: flex;
+    gap: 10px;
+    margin: 8px 0 8px 16px;
+}
+
+.detail-images img {
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+/*RESPONSIVE MOBILE*/
+@media (max-width: 768px){
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .Hero{
+        padding: 20px;
+        text-align: center;
+        font-size: 10px;
+    }
+    .Hero span{
+        font-size: 24px;
+    }
+    .Section{
+        height: auto;
+        padding: 40px 20px;
+    }
+    .Profile{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    .Profile img{
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        
+    }
+    .Profile p{
+        text-align: center;
+        margin-right: 0;
+    }
+    .social-media{
+        margin-top: 10px;
+    }
+    .Card {
+        flex-direction: column;  /* logo & teks susun ke bawah */
+        align-items: flex-start;
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .Card img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .Card h5 {
+        font-size: 15px;
+    }
+
+    .Card p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .periode {
+        font-size: 11px;
+        padding: 3px 10px;
+    }
+    .btn-cv{
+        margin-right: 130px;
+    }
+     .Card img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .detail-images {
+        flex-wrap: wrap;
+    }
+
+    .detail-images img {
+        width: calc(50% - 5px);
+        height: 110px;
+    }
+
+
+}

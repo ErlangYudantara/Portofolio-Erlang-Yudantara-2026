@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!--LIBRARY-->
+    <!--LINK INTEGRASI-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/skill.css">
+    <link rel="stylesheet" href="CSS/project.css">
+    <link rel="stylesheet" href="CSS/sertifikat.css">
+    <link rel="stylesheet" href="CSS/kontak.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <!--LINK INTEGRASI-->
+    <title>Portofolio Erlang</title>
+</head>
+<body>
+
+    <!--NAVIGASI-->
+    <nav>
+        <h1>Portofolio Erlang Yudantara</h1>
+        <ul>
+            <li><a href="#Beranda">Home</a></li>
+            <li><a href="#Tentang">About</a></li>
+            <li><a href="#Skill">Skills</a></li>
+            <li><a href="#Project">Project</a></li>
+            <li><a href="#Kontak">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--SECTION HOME-->
+    <section id="Beranda" class="Hero">
+        <h2>Halo, Saya <span class="nama">Erlang Yudantara</span></h2>
+        <p>Tech Enthausiat</p>
+        <p><span class="role">Front-end Developer</span></p>
+        <a href="#Kontak">
+        <button onclick="">Hubungi Saya</button>
+        </a>
+    </section>
+
+    <!--SECTION ABOUT-->
+    <section id="Tentang" class="Section">
+        <h2>Tentang Saya</h2>
+        <div class="Profile">
+        <div class="Profile-text">
+        <p>Saya mulai tertarik dengan dunia teknologi sejak duduk di bangku SMA. 
+            Ketertarikan tersebut terus berkembang hingga saat ini saya menempuh 
+            pendidikan di Universitas UPN Veteran Jakarta. Saya memiliki minat 
+            khusus di bidang web development, terutama pada bagian frontend, 
+            karena saya menikmati proses membangun tampilan yang menarik sekaligus 
+            memberikan pengalaman pengguna yang baik. Selain itu, saya adalah pribadi 
+            yang senang belajar hal baru dan terus mengembangkan kemampuan, 
+            baik dari sisi teknis maupun kreativitas dalam membuat sebuah aplikasi. 
+            Saya percaya bahwa teknologi dapat menjadi solusi untuk berbagai permasalahan, 
+            dan saya ingin menjadi bagian dari perkembangan tersebut.</p>
+            <div class="Profile-bottom">
+                <a href="https://drive.google.com/file/d/1uLe-HK3Rb4guGQ37elN1D41yObG4Z4jg/view?usp=drive_link" target="_blank" download class="btn-cv">
+                    <i class="fa-solid fa-download"></i>Download CV
+                </a>
+            </div>
+            </div>
+            <img src="../Gambar/Profile.jpeg" alt="profile">
+        </div>
+          <div class="social-media">
+            <a href="https://www.instagram.com/ydntraa_/" target="_blank"
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/erlang-yudantara-96053b374/" target="_blank"
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.tiktok.com/@ydntaraa" target="_blank"
+            <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://github.com/ErlangYudantara" target="_blank"
+            <i class="fa-brands fa-github"></i>
+            </a>
+            </div>
+    </section>
+
+    <!--SECTION PENDIDIKAN-->
+    <section id="Pendidikan" class="Section">
+        <h2>Pendidikan Saya</h2>
+        <div class="Pendidikan-list">
+
+        <div class="Card" onclick="toggleCard(this)">
+        <img src="../Gambar/logo_upn.png" >
+        <div class="card-content">
+        <h5>UPN Veteran Jakarta</h5>
+        <p>Saat ini saya merupakan mahasiswa di Fakultas Ilmu Komputer, 
+            program studi S1 Sistem Informasi, di Universitas UPN Veteran Jakarta. 
+            Di bangku perkuliahan, saya mempelajari berbagai aspek teknologi informasi
+             serta pengembangan sistem, khususnya dalam bidang web development.</p>
+        <p class="periode">2025-Sekarang PRESENT</p>
+        </div>
+        <i class="fa-solid fa-chevron-down card-arrow"></i>
+        <!--DETAIL UPNVJ-->
+        <div class="card-detail">
+            <hr>
+            <h6>Pengalaman di UPN Veteran Jakarta</h6>
+            <ul>
+                <li>Mengikuti Organisasi Veteran Tech (KSM Android) sebagai mentee Front-end</li>
+                <img src="https://lh3.googleusercontent.com/d/10Mp773ZRQMD8qBTUEe4F6vk4Wx1eJG6K" alt="mente android">
+                <li>Company Visit ke perusahaan MayBank</li>
+                <div class="image">
+                <img src="https://lh3.googleusercontent.com/d/12ytJnJIonzZOntRDUM9iPdVAL-rTKE9w" alt="Company Visit">
+                <img src="https://lh3.googleusercontent.com/d/1OJdmYG4JAZ_fzPFuiiwrlosaSfy4wFCO" alt="Company Visit">
+                </div>
+                <li>Mengikuti Seminar Workshop AI Revolution</li>
+                <li>Mengikuti Sertifikasi Internasional IBM SKILLS BUILD</li>
+            </ul>
+        </div>
+        </div>
+        <div class="Card" onclick="toggleCard(this)">
+        <img src="../Gambar/logo_bk.png">
+        <div class="card-content">
+        <h5>SMA Bunda Kandung Jakarta</h5>
+        <p>Saya menjalani pendidikan dengan Kurikulum Merdeka
+           dengan peminatan di bidang Teknik, yang menjadi awal 
+           ketertarikan saya dalam dunia teknologi.</p>
+          <p class="periode">2022-2025 PRESENT</p> 
+          </div>
+          <i class="fa-solid fa-chevron-down card-arrow"></i>
+          <div class="card-detail">
+            <hr>
+            <h6>Pengalaman di SMA Bunda Kandung</h6>
+            <ul>
+                <li>Event Organaizer Graduation</li>
+                <li>Menjadi IT Support Persiapan Acara</li>
+                <img src="https://lh3.googleusercontent.com/d/1NWzxhSDiH8-D2czhEF93NZZKaRn1OQsr" alt="Company Visit">
+                <img src="https://lh3.googleusercontent.com/d/1_X7IzYSsPBT10lu_5a5zo02K3yu9T6Sd" alt="Company Visit">
+            </ul>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <!--SECTION SKILL-->
+    <section id="Skill" class="Section">
+    <h2>Skill</h2>
+    <div class="Skill-wrapper">
+    <div class="Skill-track-wrapper">
+        <div class="Skill-track">
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <span>HTML5</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <span>CSS3</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <span>JavaScript</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                <span>React</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                <span>Tailwind</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                <span>MySQL</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                <span>PostgreSQL</span>
+            </div>
+            <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                    <span>Git</span>
+                </div>
+            <!-- duplikat supaya looping mulus -->
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <span>HTML5</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <span>CSS3</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <span>JavaScript</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                <span>React</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                <span>Tailwind</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                <span>MySQL</span>
+            </div>
+            <div class="Skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                <span>PostgreSQL</span>
+            </div>
+            <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                    <span>Git</span>
+                </div>
+        </div>
+        <!-- BARIS 2 - geser kanan -->
+        <div class="Skill-track-wrapper">
+            <div class="Skill-track reverse">
+                <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                    <span>Tailwind</span>
+                </div>
+                <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                    <span>MySQL</span>
+                </div>
+                <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                    <span>Git</span>
+                </div>
+                <!-- duplikat baris 2 -->
+                <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                    <span>Tailwind</span>
+                </div>
+                <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                    <span>MySQL</span>
+                </div>
+                <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="Skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    </div>
+    
+    <!--SECTION PROJECT-->
+<section id="Project" class="Section">
+    <h2>Project</h2>
+    <div class="Project-list">
+
+        <a href="#" target="_blank" class="Card-Project">
+            <img src="/Gambar/portofolio.png" alt="preview" class="card-preview">
+            <h5>Portofolio</h5>
+            <p>Website portofolio pribadi yang menampilkan informasi tentang saya, skill, pendidikan, dan project yang pernah dikerjakan.</p>
+            <div class="card-icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html5" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css3"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript"/>
+            </div>
+        </a>
+
+        <a href="https://kopirukun.netlify.app" target="_blank" class="Card-Project">
+            <img src="/Gambar/kopirukun.png" alt="preview" class="card-preview">
+            <h5>Kopi Rukun</h5>
+            <p>Website sederhana bertema coffee shop yang dibuat dengan tampilan modern dan responsif untuk memberikan pengalaman pengguna yang nyaman.</p>
+            <div class="card-icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html5" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css3"/>
+            </div>
+        </a>
+
+        <a href="#" target="_blank" class="Card-Project">
+            <img src="/Gambar/silfak.png" alt="preview" class="card-preview">
+            <h5>Silfak</h5>
+            <p>Website kerjasama TIM dimana membangun Sistem Laporan Fasilitas Kampus Monitoring & Pencatatan Fasilitas OB. <b>ON PROGRESS</b></p>
+            <div class="card-icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="tailwindcss"/>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!--SECTION SERTIFIKASI-->
+<section id="Sertifikasi" class="Section">
+    <h2>Sertifikasi</h2>
+    <div class="Sertifikasi-list">
+        <a href="https://drive.google.com/file/d/1AtZeku7PJD6QK9EZPw2eXM1tx0AnBhsh/view?usp=drive_link" target="_blank" class="Card-Sertifikasi">
+            <img src="https://lh3.googleusercontent.com/d/1AtZeku7PJD6QK9EZPw2eXM1tx0AnBhsh" alt="IBM Skills Build" class="sertif-preview"/>
+            <h5>IBM SKILLS BUILD</h5>
+            <p>Data Classification and Sumarization Using IBM Granite</p>
+        </a>
+        <a href="https://drive.google.com/file/d/1CsBQyHpF3ud2ULoXAGmUacGWK5zSaHyL/view?usp=drive_link" target="_blank" class="Card-Sertifikasi">
+              <img src="https://lh3.googleusercontent.com/d/1CsBQyHpF3ud2ULoXAGmUacGWK5zSaHyL" alt="Front-end basic" class="sertif-preview"/>
+            <h5>Front-end Basic</h5>
+            <p>Mentee kelas Front-end Basic oleh KSM Android UPNVJ</p>
+        </a>
+         <a href="https://drive.google.com/file/d/1Wp8ZJG4lylFQtQ_-UfEGo3vPBEUsJ5rg/view?usp=drive_link" target="_blank" class="Card-Sertifikasi">
+            <img src="https://lh3.googleusercontent.com/d/1Wp8ZJG4lylFQtQ_-UfEGo3vPBEUsJ5rg" alt="Webinar Internasional" class="sertif-preview"/>
+            <h5>Fik Fair Webinar Internasional</h5>
+            <p>Peserta Webinar Internasional FIK FAIR disenggalarakan BEM Fakultas Ilmu Komputer</p>
+        </a>
+        <a href="https://drive.google.com/file/d/1zAQnF9Svuv224_LzC-VkO1Y8b6qgSlq8/view?usp=drive_link" target="_blank" class="Card-Sertifikasi">
+            <img src="https://lh3.googleusercontent.com/d/1zAQnF9Svuv224_LzC-VkO1Y8b6qgSlq8" alt="Seminar Workshop" class="sertif-preview"/>
+            <h5>Seminar Workshop</h5>
+            <p>AI Revolution: Transforming Industries and Workflows</p>
+        </a>
+    </div>
+</section>
+
+    <!--SECTION KONTAK-->
+  <section id="Kontak" class="Contact-Section">
+    <div class="Contact-Wrapper">
+        <!-- KIRI - Form Hubungi -->
+        <div class="Contact-Container">
+            <h2>Hubungi Saya</h2>
+            <p>Terima kasih telah mengunjungi portofolio saya. Saya sangat terbuka untuk berbagai kesempatan,
+            baik kerja sama proyek, diskusi seputar teknologi, maupun berbagi pengalaman dalam dunia web development.
+            Jangan ragu untuk menghubungi saya melalui form kontak maupun media sosial yang tersedia.</p>
+            <form class="Contact-Form">
+                <div class="Input-Group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Nama Kamu" required>
+                </div>
+                <div class="Input-Group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email Kamu" required>
+                </div>
+                <div class="Input-Group">
+                    <i class="fa-solid fa-message"></i>
+                    <textarea placeholder="Pesan Kamu" required></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            
+        </div>
+
+        <!-- KANAN - Comments -->
+        <div class="Contact-Container">
+            <h2>Comments</h2>
+            <p>Sampaikan pendapat Anda di sini.</p>
+            <form class="Contact-Form">
+                <div class="Input-Group">
+                    <input type="text" placeholder="Nama Kamu" required>
+                </div>
+                <div class="Input-Group">
+                    <textarea placeholder="Komen Kamu" required></textarea>
+                </div>
+                <div class="Input-Group upload-group">
+                    <i class="fa-solid fa-upload"></i>
+                    <label>Upload Image
+                        <input type="file" accept="image/*" hidden>
+                    </label>
+                </div>
+                <button type="submit">Kirim Comment</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+    <!--FOOTER-->
+   <footer>
+    <div class="Footer-Container">
+        <h3>Erlang Yudantara</h3>
+        <p>Front-end Developer | Tech Enthusiast</p>
+        <div class="Footer-Social">
+           <a href="https://www.instagram.com/ydntraa_/" target="_blank"
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/erlang-yudantara-96053b374/" target="_blank"
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.tiktok.com/@ydntaraa" target="_blank"
+            <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+        <p class="Footer-Copy">&copy; 2026 Erlang Yudantara. All rights reserved</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
